@@ -1,7 +1,7 @@
 import { VFC } from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-
+import { modalScreenOptions } from 'navigation/settings';
 import { MenuModal } from 'containers';
 
 import { RootNavigatorParamsList } from '../types';
@@ -25,6 +25,7 @@ export const RootStackNavigator: VFC = () => {
         component={ TabStackNavigator }
       />
       <Screen
+        options={ modalScreenOptions }
         name={ ModalRoutes.MENU }
         component={ MenuModal }
       />

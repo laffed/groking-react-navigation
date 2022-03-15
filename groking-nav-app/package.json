@@ -12,7 +12,7 @@
     "eject": "expo eject",
     "test": "jest --watchAll",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint-fix": "eslint --fix . --ext .ts --ext .tsx",
+    "lint-fix": "eslint --fix . --ext .ts --ext .tsx"
   },
   "jest": {
     "preset": "jest-expo"
