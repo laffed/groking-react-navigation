@@ -2,7 +2,7 @@ import { useCallback, VFC } from 'react';
 import { Text } from 'react-native';
 import { Button } from 'react-native-paper';
 
-import { ScreenView } from 'components';
+import { View } from 'components';
 import { TabStackScreenProp, TabRoutes, ModalRoutes } from 'navigation';
 
 
@@ -13,7 +13,7 @@ export const ProfileScreen: VFC<TabStackScreenProp<TabRoutes.PROFILE>> = ({ navi
   }, [navigation]);
 
   return (
-    <ScreenView
+    <View
       jc='center'
       ai='center'
     >
@@ -23,6 +23,6 @@ export const ProfileScreen: VFC<TabStackScreenProp<TabRoutes.PROFILE>> = ({ navi
       <Button onPress={ onPress }>
         Edit Profile
       </Button>
-    </ScreenView>
+    </View>
   );
 };

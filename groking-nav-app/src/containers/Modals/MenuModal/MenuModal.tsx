@@ -1,19 +1,16 @@
 import { VFC } from 'react';
-import { Text } from 'react-native';
 
 import { RootStackScreenProp, ModalRoutes } from 'navigation';
-import { ScreenView } from 'components';
+import { View, Child } from 'components';
 
 
 export const MenuModal: VFC<RootStackScreenProp<ModalRoutes.MENU>> = () => {
   return (
-    <ScreenView
+    <View
       jc='center'
       ai='center'
     >
-      <Text>
-        My Profile Menu
-      </Text>
-    </ScreenView>
+      <Child />
+    </View>
   );
 };

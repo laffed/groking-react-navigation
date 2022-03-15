@@ -1,10 +1,10 @@
 import { FC } from 'react';
 import {
-  View, StyleSheet, FlexStyle, ViewStyle
+  View as RNView, StyleSheet, FlexStyle, ViewStyle
 } from 'react-native';
 
 
-export const ScreenView: FC<{
+export const View: FC<{
   jc?: FlexStyle['justifyContent'];
   ai?: FlexStyle['alignItems'];
   containerStyles?: ViewStyle;
@@ -20,8 +20,8 @@ export const ScreenView: FC<{
   });
 
   return (
-    <View style={ customStyles.container }>
+    <RNView style={ customStyles.container }>
       {children}
-    </View>
+    </RNView>
   );
 };
